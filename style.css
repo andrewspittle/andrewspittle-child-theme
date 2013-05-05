@@ -1,0 +1,124 @@
+/*
+Theme Name: Andrew Spittle
+Theme URI: http://andrewspittle.net/projects/minimal-stream
+Author: Andrew Spittle
+Author URI: http://andrewspittle.net
+Template: minimal-stream
+Description: A child theme for Minimal Stream that implements a few custom doodads.
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url("../minimal-stream/style.css?ver=20130505-1");
+
+/* =Archive listing
+------------------------------------------------ */
+.rl_book.hentry {
+	border-bottom: none;
+	margin: 0 3.8% 0;
+	padding: 21px 0 21px;
+	vertical-align: top;
+}
+.single-rl_book .hentry {
+	padding-top: 0;
+}
+.book-column {
+	display: inline-block;
+	text-align: center;
+	width: 42%;
+}
+.book-column img {
+	display: block;
+	height: inherit;
+	max-width: 100%;
+	margin: 0 auto 10px auto;
+}
+.single-rl_book img.attachment-book-cover {
+	float: left;
+	margin-right: 15px;
+}
+.book-column .entry-meta,
+.book-column .entry-meta p {
+	margin-bottom: 0;
+}
+.entry-notes {
+	clear: both;
+	color: #989898;
+	font: 13px/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 1.3rem;
+	margin: 0.5rem 0 1.5rem 0;
+}
+.entry-notes a {
+	border-bottom: 1px solid #e1e1e1;
+	color: #989898;
+	text-decoration: none;
+}
+.entry-notes a:hover,
+.entry-notes a:focus,
+.entry-notes a:active {
+	border-bottom-color: #989898;
+	color: #666;
+}
+
+/* =Tablet (portrait)
+------------------------------------------------ */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	/* Layout */
+	#wrapper,
+	#colophon {
+		width: 549px;
+		margin: 0 auto;
+		padding: 0;
+	}
+	header#masthead,
+	#primary {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+	/* Header */
+	header#masthead hgroup h1 a {
+		padding: 21px 0;
+	}
+	header#masthead hgroup #site-description {
+		display: none;
+	}
+	header nav.site-navigation {
+		border-bottom: double #f1f1f1;
+		margin-bottom: 0;
+		padding: 7px 21px;
+	}
+	/* Content */
+	#primary {
+		margin-top: 0;
+	}
+	.entry-content,
+	.entry-summary {
+		font-size: 16px;
+		font-size: 1.6rem;
+		line-height: 1.65em;
+	}
+	/* Comments */
+	.comment-author.threecol {
+		float: left;
+		margin-right: 3.8%;
+		padding: 0;
+		width: 22.05%;
+	}
+	.comment-meta.ninecol,
+	.comment-content.ninecol {
+		float: left;
+		padding: 0;
+		width: 74.05%;
+	}
+	/* Footer */
+	#colophon {
+		margin-left: 0;
+		padding: 21px 0;
+	}
+}
