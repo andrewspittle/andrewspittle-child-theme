@@ -30,8 +30,6 @@ add_action( 'after_setup_theme', 'andrewspittle_setup' );
  */
 function andrewspittle_scripts() {
 	wp_enqueue_style( 'style', get_stylesheet_uri(), '', '20130505-1' );
-	
-	wp_enqueue_script( 'mint', 'http://andsp.com/mint/?js' );
 }
 add_action( 'wp_enqueue_scripts', 'andrewspittle_scripts' );
 
